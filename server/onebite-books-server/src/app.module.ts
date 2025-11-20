@@ -13,6 +13,6 @@ import { ReviewModule } from './review/review.module';
 })
 export class AppModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer.apply(DelayMiddleware).forRoutes('*'); // 모든 경로에 미들웨어 적용
+    // consumer.apply(DelayMiddleware).forRoutes('*'); // 모든 경로에 미들웨어 적용
   }
 }
